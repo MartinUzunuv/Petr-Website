@@ -1,11 +1,13 @@
 html{
-    background-color: rgb(237, 229, 229);
+    background-color: #D9D9D9;
+
+    font-family:arial;
 }
-.flex-container {
+.title-flex-container {
   display:flex;
-  flex-direction: row;
-  flex-basis:content;
-  flex-wrap:wrap;
+
+  flex-wrap: wrap-reverse;
+
     padding-left:5%;
     padding-left:5%;
     padding-top:2%;
@@ -20,6 +22,7 @@ html{
    flex: 1 1 500px;
   }  */
 .title-text{
+object-fit:contain;
     /* margin-right:30%; */
     width:50%;
     font-size:150%;
@@ -27,39 +30,44 @@ html{
     margin:5%;
 }
 .title-owner{
+  object-fit:contain;
 
-    font-size:300%;
+    font-size:100%;
     font-style:oblique;
 }
-.green-circle{
+.title-green-circle{
     position:absolute;
     margin-left:3%;
-    height:23%;
-    width: 23%;
-    background-color: rgb(47, 231, 151);
+    height:349px;
+    width: 354px;
+    background-color:#18AD6E;
     border-radius: 50%;
     object-fit: contain;
 }
-.Petr-image{
+.title-Petr-image{
+  object-fit:contain;
     margin:1%;
     position:absolute;
-    width: 450px; /* you can use % */
-    height: auto;
-    border-radius: 50%;
+  max-width:40%;
+max-height:auto;
+  border-radius: 50%;
     /* margin-left:2%; */
     /* object-fit: scale-down; */
 }
 .title-image{
-    width:560px;
+    /* height:fit-content; */
+object-fit:contain;
+    width:331px;
+    height:
     display:flex;
     margin-right:5%;
 }
-.flex-button{
+.title-flex-button{
     display:flex;
     padding-top:10%;
 }
 
-button{
+   button{
     border-radius:50px;
     border:none;
     outline:0;
@@ -72,25 +80,11 @@ button{
     width:35%;
 }
 
-.button1{
+.title-button1{
     background-color: rgb(47, 231, 151);
     color:white;
 }
-.button2{
+.title-button2{
     background-color: rgb(213, 207, 207);
 
-}
-.second-line{
-    border-bottom-color:aquamarine;
-    background-color:none;
-    border-bottom-width:thick;
-    border-bottom-style: solid;
-    height:20%;
-    width:100%;
-    content:"";
-    display:block;
-    margin:1%;
-}
-a{
-    font-size:50%;
 }
