@@ -1,3 +1,45 @@
-#navbarExampleText {
-    background-color: red;
+#navbar {
+  box-shadow: 0px -3px 5px 4px rgba(0,0,0,0.52);
+  padding: 18px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbarGreenCircle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #00b649;
+  margin-left: 25px;
+  z-index: -1;
+  top: 10px;
+}
+
+#navbarPertBaran {
+  margin-left: 30px;
+}
+
+.navbarPointer {
+  margin-right: 30px;
+}
+
+.navbarSocialIcon {
+  height: 20px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 725px) {
+  #navbarPointers {
+    display: none;
+  }
+
+  #navbarPertBaran {
+    margin-left: 10px;
+  }
+
+  #navbarGreenCircle {
+    margin-left: 5px;
+  }
 }

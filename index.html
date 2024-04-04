@@ -1,9 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles/global.css" />
 
     <link rel="stylesheet" href="styles/navbar.css" />
 
@@ -19,37 +21,35 @@
   </head>
   <body>
     <div id="navbar">
-      <h1 id="navbarExampleText">Example</h1>
+      <div>
+        <div id="navbarGreenCircle"></div>
+        <a id="navbarPertBaran">Petr Baran</a>
+      </div>
+      <div id="navbarPointers">
+        <a class="navbarPointer">About me</a>
+        <a class="navbarPointer">Projects</a>
+        <a class="navbarPointer">Contact me</a>
+      </div>
+      <div>
+        <img
+          class="navbarSocialIcon"
+          src="images/instagram.svg"
+          alt="instagram"
+        />
+        <img
+          class="navbarSocialIcon"
+          src="images/linkedin.svg"
+          alt="linkedin"
+        />
+        <img
+          class="navbarSocialIcon"
+          src="images/facebook.svg"
+          alt="facebook"
+        />
+      </div>
     </div>
 
-    <div id="title">
-      <div class="title-name">
-        Hi! I am
-        <a
-          href="https://www.linkedin.com/in/petr-baran-pb/overlay/about-this-profile/?_l=en_US"
-        >
-          Petr Baran
-        </a>
-      </div>
-      <div class="title-flex-container">
-        <div class="title-text">
-          <div class="title-owner">The owner of</div>
-          <div class="title-owner">
-            <a href="https://finansi.bg/sofia-bul">SOFIA BUL,EOOD</a>
-          </div>
-          <div class="title-flex-button">
-            <button class="title-button1">Contact me</button>
-            <button class="title-button2">View portfolio</button>
-          </div>
-        </div>
-        <div class="title-circle-box">
-          <div class="title-image">
-            <img class="title-Petr-image" src="petr.png" />
-          </div>
-          <div class="title-green-circle"></div>
-        </div>
-      </div>
-    </div>
+    <div id="title"></div>
 
     <div id="experience"></div>
 
