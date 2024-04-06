@@ -1,0 +1,47 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.experienceBox {
+  height: 100px;
+  display: flex;
+  padding: 5px;
+  margin: 15px;
+  justify-content: space-between;
+}
+.experienceTitle {
+  height: 50px;
+  width: 150px;
+}
+.experienceText {
+  font-size: 15px;
+
+  color: #808080;
+  height: 50px;
+  width: 60%;
+}
+.experienceNum {
+  font-size: 30px;
+}
+#experienceSecondText {
+  width: 50%;
+}
+
+@media screen and (max-width: 725px) {
+  .experienceBox {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 250px;
+  }
+  .experienceText {
+    width: 90%;
+    height: 50px;
+  }
+  #experienceSecondText {
+    width: 90%;
+  }
+}
