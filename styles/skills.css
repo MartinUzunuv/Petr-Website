@@ -1,0 +1,38 @@
+#skills {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.skillsContainer {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  margin: 60px;
+}
+.skillsPictureAndText {
+  width: 120px;
+
+  padding-top: 40px;
+}
+.skillsPicture {
+  margin: 30px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 725px) {
+  #skills {
+    padding: 30px;
+  }
+  .skillsContainer {
+    margin: 1px;
+  }
+  .skillsPictureAndText {
+    width: 100px;
+    padding-top:80px;
+  }
+  #secondSkillsContainer {
+    margin-top: 120px;
+  }
+}
