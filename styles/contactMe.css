@@ -1,0 +1,59 @@
+#contactMe {
+  position: relative;
+  background-color: #cbcbcb;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+#contactMeText {
+  padding: 50px;
+  width: 350px;
+  font-size: 34px;
+  font-weight: bold;
+}
+#contactMeBox {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 100px;
+  margin: 50px;
+
+  border-style: solid;
+  border-color: grey;
+}
+#contactMeCircle {
+  position: absolute;
+  margin-left: 50%;
+  top: -100px;
+  background: #00b649;
+
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+#contactMeForum{
+  position:absolute;
+  width:100px;
+}
+#contactMePetr {
+  margin: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+#contactMeBoxText{
+text-decoration:underline;
+margin-top:30px;
+  margin-left:30px;
+  margin-right:50px;
+  font-size:40px;
+
+}
+#contactMeSocial {
+  display: flex;
+    justify-content:space-between;
+}
+.contactMeIcons {
+  width: 40px;
+  padding:5px;
+}
