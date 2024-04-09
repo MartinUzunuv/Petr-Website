@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,11 +36,11 @@
           src="images/instagram.svg"
           alt="instagram"
         />
-  <img
+        <img
           class="navbarSocialIcon"
           src="images/linkedin.svg"
           alt="linkedin"
-    />
+        />
         <img
           class="navbarSocialIcon"
           src="images/facebook.svg"
@@ -125,34 +125,34 @@
 
     <div id="contactMe">
       <div>
-
-        <div id="contactMeText">
-          Are you interested? Contact me!
-        </div>
+        <div id="contactMeText">Are you interested? Contact me!</div>
         <div id="contactMeBox">
-          <img id = "contactMePetr" src ="images/petr.png"/>
-            <div id = "contactMeBoxText">
-            Petr Baran
-            <div id = "contactMeSocial">
-            <img class = "contactMeIcons" src = "images/instagram.svg"/>
+          <img id="contactMePetr" src="images/petr.png" />
+          <div id="contactMeBoxText">
+            <a id="contactBoxTitle">Petr Baran</a>
+            <div id="contactMeSocial">
+              <img class="contactMeIcons" src="images/instagram.svg" />
 
-            <img class = "contactMeIcons"  src = "images/linkedin.svg"/>
+              <img class="contactMeIcons" src="images/linkedin.svg" />
 
-            <img class = "contactMeIcons" src = "images/facebook.svg"/>
+              <img class="contactMeIcons" src="images/facebook.svg" />
             </div>
           </div>
         </div>
-
       </div>
 
-      <div id="contactMeCircle">
-             </div>
-        <div id = "contactMeForum">
-        <input>Your Email</input>
- <input>Your Message</input>
-        <button>Send Message </button>
-
+      <div id="cantactCircleUp">
+        <div id="contactMeCircle">
+          <form id="contactMeForum" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4d2b13c3-3ee2-4543-a273-e4a942dd4944">
+            <input type="email" class="contactFormInput" placeholder="Your Email" name="Sender Email" required />
+            <input class="contactFormInput" placeholder="Your message" name="Sender Message" required />
+            <!-- <div class="h-captcha" data-captcha="true"></div> -->
+            <input id="contactSendMessage" type="submit" value="Send message">
+          </form>
+        </div>
       </div>
     </div>
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
   </body>
 </html>

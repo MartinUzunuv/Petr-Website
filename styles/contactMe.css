@@ -1,59 +1,98 @@
 #contactMe {
   position: relative;
   background-color: #cbcbcb;
-  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  margin-top: 50px;
 }
+
 #contactMeText {
-  padding: 50px;
-  width: 350px;
-  font-size: 34px;
+  padding: 25px;
+  width: 175px;
+  font-size: 17px;
   font-weight: bold;
 }
+
 #contactMeBox {
   display: flex;
   justify-content: space-around;
   border-radius: 100px;
-  margin: 50px;
-
+  margin: 25px;
   border-style: solid;
   border-color: grey;
 }
+
 #contactMeCircle {
   position: absolute;
-  margin-left: 50%;
-  top: -100px;
+  top: -50px;
   background: #00b649;
-
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+  right: 25px;
 }
-#contactMeForum{
-  position:absolute;
-  width:100px;
+
+#cantactCircleUp {
+  width: 275px;
 }
+
+#contactMeForum {
+  padding-top: 50px;
+  padding-left: 25px;
+}
+
 #contactMePetr {
-  margin: 30px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  margin: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
 }
-#contactMeBoxText{
-text-decoration:underline;
-margin-top:30px;
-  margin-left:30px;
-  margin-right:50px;
-  font-size:40px;
 
+#contactMeBoxText {
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 25px;
+  font-size: 16px;
 }
+
 #contactMeSocial {
   display: flex;
-    justify-content:space-between;
+  justify-content: space-between;
 }
+
 .contactMeIcons {
-  width: 40px;
-  padding:5px;
+  width: 20px;
+  padding: 5px;
+}
+
+.contactFormInput {
+  background-color: #00cf53;
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: #b5ffd2;
+  font-size: 10px;
+  width: 160px;
+}
+
+.contactFormInput::placeholder {
+  color: #b5ffd2;
+}
+
+#contactSendMessage {
+   background-color: #97FFC1;
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: #006227;
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contactBoxTitle {
+    padding-left: 5px;
 }
