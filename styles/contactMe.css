@@ -22,7 +22,17 @@
   border-color: grey;
 }
 
+#contactMeBoxMobile {
+  display: none;
+  justify-content: space-around;
+  border-radius: 100px;
+  margin: 25px;
+  border-style: solid;
+  border-color: grey;
+}
+
 #contactMeCircle {
+  display: inline;
   position: absolute;
   top: -50px;
   background: #00b649;
@@ -40,7 +50,11 @@
   padding-top: 50px;
   padding-left: 25px;
 }
-
+#contactMeForumMobile {
+  display: none;
+  padding-top: 50px;
+  padding-left: 25px;
+}
 #contactMePetr {
   margin: 15px;
   width: 45px;
@@ -82,8 +96,10 @@
 }
 
 #contactSendMessage {
-   background-color: #97FFC1;
+  background-color: #97ffc1;
   border: none;
+  padding-top: 50px;
+  padding-left: 25px;
   border-radius: 100px;
   padding: 10px;
   margin: 10px;
@@ -94,5 +110,34 @@
 }
 
 #contactBoxTitle {
-    padding-left: 5px;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 725px) {
+  #contactMe {
+    background: #00b649;
+  }
+  #contactMeBox {
+    display: none;
+  }
+  #contactMeCircle {
+    display: none;
+  }
+  #contactMeBoxMobile {
+    display: flex;
+    width: 200px;
+
+    margin-left: 50%;
+  }
+  #contactMeForumMobile {
+    display: inline;
+  }
+
+   #contactFormInputMessage{
+    margin-top: 30px;
+  }
+#contactFormInputEmail {
+    margin-right:20px;
+    margin: -13px;
+  }
 }

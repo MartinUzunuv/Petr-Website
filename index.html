@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -139,16 +139,76 @@
             </div>
           </div>
         </div>
+        <form
+          id="contactMeForumMobile"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="4d2b13c3-3ee2-4543-a273-e4a942dd4944"
+          />
+          <input
+            type="email"
+            class="contactFormInput"
+            id="contactFormInputEmail"
+            placeholder="Your Email"
+            name="Sender Email"
+            required
+          />
+          <input
+            class="contactFormInput"
+            id="contactFormInputMessage"
+            placeholder="Your message"
+            name="Sender Message"
+            required
+          />
+          <!-- <div class="h-captcha" data-captcha="true"></div> -->
+          <input id="contactSendMessage" type="submit" value="Send message" />
+        </form>
+        <div id="contactMeBoxMobile">
+          <img id="contactMePetr" src="images/petr.png" />
+          <div id="contactMeBoxText">
+            <a id="contactBoxTitle">Petr Baran</a>
+            <div id="contactMeSocial">
+              <img class="contactMeIcons" src="images/instagram.svg" />
+
+              <img class="contactMeIcons" src="images/linkedin.svg" />
+
+              <img class="contactMeIcons" src="images/facebook.svg" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="cantactCircleUp">
         <div id="contactMeCircle">
-          <form id="contactMeForum" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="4d2b13c3-3ee2-4543-a273-e4a942dd4944">
-            <input type="email" class="contactFormInput" placeholder="Your Email" name="Sender Email" required />
-            <input class="contactFormInput" placeholder="Your message" name="Sender Message" required />
+          <form
+            id="contactMeForum"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="4d2b13c3-3ee2-4543-a273-e4a942dd4944"
+            />
+            <input
+              type="email"
+              class="contactFormInput"
+              placeholder="Your Email"
+              name="Sender Email"
+              required
+            />
+            <input
+              class="contactFormInput"
+              placeholder="Your message"
+              name="Sender Message"
+              required
+            />
             <!-- <div class="h-captcha" data-captcha="true"></div> -->
-            <input id="contactSendMessage" type="submit" value="Send message">
+            <input id="contactSendMessage" type="submit" value="Send message" />
           </form>
         </div>
       </div>
