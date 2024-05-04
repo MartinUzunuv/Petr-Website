@@ -50,11 +50,14 @@
   padding-top: 50px;
   padding-left: 25px;
 }
+
 #contactMeForumMobile {
   display: none;
+  margin-left: 60px;
   padding-top: 50px;
   padding-left: 25px;
 }
+
 #contactMePetr {
   margin: 15px;
   width: 45px;
@@ -114,7 +117,11 @@
 }
 
 @media screen and (max-width: 725px) {
+  #contactMeCircleUp {
+    display: none;
+  }
   #contactMe {
+    padding-left: 15px;
     background: #00b649;
   }
   #contactMeBox {
@@ -125,19 +132,16 @@
   }
   #contactMeBoxMobile {
     display: flex;
-    width: 200px;
-
-    margin-left: 50%;
+    float: right;
   }
   #contactMeForumMobile {
     display: inline;
+    margin-left: 70px;
   }
-
-   #contactFormInputMessage{
-    margin-top: 30px;
+  #contactMeText {
+    padding-bottom: 0px;
   }
-#contactFormInputEmail {
-    margin-right:20px;
-    margin: -13px;
+  #contactMeSizeDiv {
+    width: 100%;
   }
 }

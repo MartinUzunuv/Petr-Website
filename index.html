@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,9 +26,9 @@
         <a id="navbarPertBaran">Petr Baran</a>
       </div>
       <div id="navbarPointers">
-        <a class="navbarPointer">About me</a>
+        <a onclick="smoothScroll('#title')" class="navbarPointer">About me</a>
         <a class="navbarPointer">Projects</a>
-        <a class="navbarPointer">Contact me</a>
+        <a onclick="smoothScroll('#contactMe')" class="navbarPointer">Contact me</a>
       </div>
       <div>
         <img
@@ -49,33 +49,51 @@
       </div>
     </div>
 
-    <div id="title">
-      <div id="titleText">
-        <div id="titleName">
-          <a>Hi! I am</a>
-          <a href="google.com"> Petr Baran</a>
+    <div id="titleCenter">
+      <div id="title">
+        <div id="titleText">
+          <div id="titleName">
+            <a>Hi! I am</a>
+            <a id="titleLink" href="google.com">Petr Baran</a>
+          </div>
+          <div id="titltImageMobileCenter">
+            <div id="titleImageMobile">
+              <div id="titleCircle"></div>
+              <img id="titlePetr" src="images/petr.png" />
+            </div>
+          </div>
+
+          <a id="titleOwner">The owner of SOFIA BUL, EOD</a>
+          <div id="titleButtonsBox">
+            <button
+              onclick="smoothScroll('#contactMe')"
+              class="titleButtons"
+              id="titleButtonsContact"
+            >
+              Contact me
+            </button>
+            <script>
+              function smoothScroll(target) {
+                var targetElement = document.querySelector(target);
+                window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            </script>
+            <button class="titleButtons" id="titleButtonsPortfolio">
+              View Portfolio
+            </button>
+          </div>
         </div>
-        <div id="titleImageMobile">
+        <div id="titleImage">
           <div id="titleCircle"></div>
           <img id="titlePetr" src="images/petr.png" />
         </div>
-
-        <a id="titleOwner">The owner of SOFIA BUL, EOD</a>
-        <div id="titleButtonsBox">
-          <button class="titleButtons" id="titleButtonsContact">
-            Contact me
-          </button>
-          <button class="titleButtons" id="titleButtonsPortfolio">
-            View Portfolio
-          </button>
-        </div>
-      </div>
-      <div id="titleImage">
-        <div id="titleCircle"></div>
-        <img id="titlePetr" src="images/petr.png" />
       </div>
     </div>
-
+    <div class="titleLines"></div>
+    <div class="titleLines"></div>
     <div id="experience">
       <div class="experienceBox">
         <div class="experienceTitle">
@@ -149,7 +167,7 @@
     <div id="projects"></div>
 
     <div id="contactMe">
-      <div>
+      <div id="contactMeSizeDiv">
         <div id="contactMeText">Are you interested? Contact me!</div>
         <div id="contactMeBox">
           <img id="contactMePetr" src="images/petr.png" />
@@ -174,21 +192,22 @@
             name="access_key"
             value="4d2b13c3-3ee2-4543-a273-e4a942dd4944"
           />
+          <br />
           <input
             type="email"
             class="contactFormInput"
-            id="contactFormInputEmail"
             placeholder="Your Email"
             name="Sender Email"
             required
           />
+          <br />
           <input
             class="contactFormInput"
-            id="contactFormInputMessage"
             placeholder="Your message"
             name="Sender Message"
             required
           />
+          <br />
           <!-- <div class="h-captcha" data-captcha="true"></div> -->
           <input id="contactSendMessage" type="submit" value="Send message" />
         </form>
@@ -207,7 +226,7 @@
         </div>
       </div>
 
-      <div id="cantactCircleUp">
+      <div id="contactCircleUp">
         <div id="contactMeCircle">
           <form
             id="contactMeForum"
