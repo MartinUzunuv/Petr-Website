@@ -1,0 +1,37 @@
+#projects{
+  width:100%;
+display:flex;
+ 
+justify-content: center;
+}
+#projectsBox{
+    width:80%;
+
+
+  }
+.projectsPannels{
+      margin-bottom:25px;
+    width:100%;
+     height:300px;
+  border-radius:25px;
+}
+ #projectsPannelsFirst{
+
+background: #00B649;
+}
+
+ #projectsPannelsSecond{
+
+background: #006227;
+}
+
+ #projectsPannelsThird{
+
+background: #00FF66;
+}
+
+@media screen and (max-width: 725px) {
+.projectsPannels{
+    height:150px;
+  }
+}
