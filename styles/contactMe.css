@@ -27,6 +27,7 @@
   justify-content: space-around;
   border-radius: 100px;
   margin: 25px;
+  margin-top: none;
   border-style: solid;
   border-color: grey;
 }
@@ -53,9 +54,6 @@
 
 #contactMeForumMobile {
   display: none;
-  margin-left: 60px;
-  padding-top: 50px;
-  padding-left: 25px;
 }
 
 #contactMePetr {
@@ -111,39 +109,49 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-#contactSendMessage:hover{
-  cursor:pointer;
+
+#contactSendMessage:hover {
+  cursor: pointer;
 }
+
 #contactBoxTitle {
   padding-left: 5px;
+  color: black;
 }
 
 @media screen and (max-width: 725px) {
   #contactMeCircleUp {
     display: none;
   }
+
   #contactMe {
     padding-left: 15px;
     background: #00b649;
   }
+
   #contactMeBox {
     display: none;
   }
+
   #contactMeCircle {
     display: none;
   }
+
   #contactMeBoxMobile {
     display: flex;
     float: right;
   }
+
   #contactMeForumMobile {
-    display: inline;
-    margin-left: 70px;
+    display: block;
   }
+
   #contactMeText {
     padding-bottom: 0px;
   }
+
   #contactMeSizeDiv {
     width: 100%;
   }
 }
+

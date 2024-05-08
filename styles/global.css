@@ -6,3 +6,8 @@ html {
 body {
   margin: 0px;
 }
+
+#aboutLargeText {
+  margin-left: 40px;
+  margin-right: 40px;
+}

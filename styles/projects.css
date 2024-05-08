@@ -1,37 +1,144 @@
-#projects{
-  width:100%;
-display:flex;
- 
-justify-content: center;
-}
-#projectsBox{
-    width:80%;
-
-
-  }
-.projectsPannels{
-      margin-bottom:25px;
-    width:100%;
-     height:300px;
-  border-radius:25px;
-}
- #projectsPannelsFirst{
-
-background: #00B649;
+#projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
- #projectsPannelsSecond{
-
-background: #006227;
+.projectsPannels {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  max-width: 800px;
 }
 
- #projectsPannelsThird{
+#projectsPannelsFirst {
+  background: #00b649;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
-background: #00FF66;
+#projectsPannelsFirstText {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#projectsPannelsSecond {
+  background: #006227;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+#projectsPannelsSecondText {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#projectsPannelsThird {
+  background: #00ff66;
+  display: flex;
+}
+
+#projectsPannelsThirdText {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#projectsPannelsFirstText {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#projectsVideoOne {
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 15px;
+  border: none;
+  width: calc(100% - 80px);
+  max-width: 420px;
+  height: 220px;
+}
+
+#projectsVideoTwo {
+  margin-top: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
+  border: none;
+  width: calc(100% - 80px);
+  max-width: 420px;
+  height: 220px;
+}
+
+#projectsImage {
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 725px) {
-.projectsPannels{
-    height:150px;
+  #projectsVideoOne {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    height: 250px;
+    max-width: unset;
   }
+
+  #projectsVideoTwo {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    height: 250px;
+    max-width: unset;
+  }
+
+  #projectsPannelsFirstText {
+    margin-top: 0px;
+  }
+
+  #projectsPannelsSecondText {
+    margin-top: 0px;
+  }
+
+  #projectsPannelsFirst {
+    flex-wrap: wrap;
+  }
+
+  #projectsPannelsSecond {
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
+
+  .projectsPannels {
+    height: 340px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  #projectsVideoOne {
+    height: 200px;
+  }
+
+  #projectsVideoTwo {
+    height: 200px;
+  }
+
+  .projectsPannels {
+    height: 300px;
+  }
+
+}
+
+.projectCenterDiv {
+  width: 95%;
+  display: flex;
+  justify-content: center;
 }

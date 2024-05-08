@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Petr Baran</title>
 
     <link rel="stylesheet" href="styles/global.css" />
 
@@ -26,26 +26,35 @@
         <a id="navbarPertBaran">Petr Baran</a>
       </div>
       <div id="navbarPointers">
-        <a onclick="smoothScroll('#title')" class="navbarPointer">About me</a>
-        <a class="navbarPointer">Projects</a>
-        <a onclick="smoothScroll('#contactMe')" class="navbarPointer">Contact me</a>
+        <a onclick="smoothScroll('#aboutLargeText')" class="navbarPointer"
+          >About me</a
+        >
+        <a onclick="smoothScroll('#projects')" class="navbarPointer"
+          >Projects</a
+        >
+        <a onclick="smoothScroll('#contactMe')" class="navbarPointer"
+          >Contact me</a
+        >
       </div>
       <div>
-        <img
-          class="navbarSocialIcon"
-          src="images/instagram.svg"
-          alt="instagram"
-        />
-        <img
-          class="navbarSocialIcon"
-          src="images/linkedin.svg"
-          alt="linkedin"
-        />
-        <img
-          class="navbarSocialIcon"
-          src="images/facebook.svg"
-          alt="facebook"
-        />
+        <a href="https://www.linkedin.com/in/petr-baran-pb/">
+          <img
+            class="navbarSocialIcon"
+            src="images/instagram.svg"
+            alt="instagram"
+        /></a>
+        <a href="https://www.linkedin.com/in/petr-baran-pb/"
+          ><img
+            class="navbarSocialIcon"
+            src="images/linkedin.svg"
+            alt="linkedin"
+        /></a>
+        <a href="https://www.linkedin.com/in/petr-baran-pb/">
+          <img
+            class="navbarSocialIcon"
+            src="images/facebook.svg"
+            alt="facebook"
+        /></a>
       </div>
     </div>
 
@@ -54,7 +63,9 @@
         <div id="titleText">
           <div id="titleName">
             <a>Hi! I am</a>
-            <a id="titleLink" href="google.com">Petr Baran</a>
+            <a id="titleLink" href="https://www.linkedin.com/in/petr-baran-pb/"
+              >Petr Baran</a
+            >
           </div>
           <div id="titltImageMobileCenter">
             <div id="titleImageMobile">
@@ -63,7 +74,7 @@
             </div>
           </div>
 
-          <a id="titleOwner">The owner of SOFIA BUL, EOD</a>
+          <a id="titleOwner">Owner of SOFIA BUL, EOD</a>
           <div id="titleButtonsBox">
             <button
               onclick="smoothScroll('#contactMe')"
@@ -81,9 +92,19 @@
                 });
               }
             </script>
-            <button class="titleButtons" id="titleButtonsPortfolio">
+            <button
+              onclick="redirectToLinkedIn()"
+              class="titleButtons"
+              id="titleButtonsPortfolio"
+            >
               View Portfolio
             </button>
+            <script>
+              function redirectToLinkedIn() {
+                window.location.href =
+                  "https://www.linkedin.com/in/petr-baran-pb/";
+              }
+            </script>
           </div>
         </div>
         <div id="titleImage">
@@ -112,25 +133,52 @@
           <div>years of experience in the industry</div>
         </div>
         <div id="experienceSecondText" class="experienceText">
-          involved in the Europian Energy Sector, in the Bulgarian Energy Sector
+          Involved in the Europian Energy Sector, in the Bulgarian Energy Sector
           as COO and Vice-chairman of BoD ČEZ Bulgaria EAD, Vice-chairman of BoD
           of ČEZ Elektro Bulgaria AD, Vice-chairman of BoD of TEC Varna EAD and
-          Chairman of BoD of Free Energy Project Oreshets EAD – 4.8 MWp solar
-          power plant
+          Chairman of BoD of Free Energy Project Oreshets EAD and ets.
         </div>
       </div>
 
       <div class="experienceBox">
         <div class="experienceTitle">
-          <div class="experienceNum">15+</div>
-          <div>projects</div>
+          <div class="experienceNum">20+</div>
+          <div>Years of management experience</div>
         </div>
-        <div class="experienceText">
-          Silesian University in Opava Master’s degree, Finance, Banking
-          1990-1995 Opava, Moravian-Silesian
-        </div>
+        <div class="experienceText">Taking managerial positions since 1998</div>
       </div>
     </div>
+
+    <div id="aboutLargeText">
+      <h3>About</h3>
+      I believe that my experience in the field of Power Industry, Energy and
+      Investments, my abilities and qualifications make me a reliable partner
+      and a trusted advisor. In last 10 years I am deeply involved in the
+      Europian Energy Sector. In my career development I went through stock
+      exchange and OTC dealing and administration of state-held shares in Czech
+      companies owned by National Property Fund. I had the chance to participate
+      in privatisation of 60% equity interest in Komerční banka, a.s. through
+      public competition; privatisation of 66 % equity interest in ČSOB, a.s.
+      through public competition; privatisation of 52% equity interest in Česká
+      spořitelna, a.s. through direct sale; preparation for privatisation of 97%
+      equity interest in Transgas, a.s. My managerial experience and skills in
+      Finance and Energy was the reason to be appointed as Managing Director of
+      MERO Pipeline, GmbH Vohburg a.d. Donau, Germany, daughter company of MERO
+      ČR, a.s., which owns and operates the Druzba and IKL crude oil pipelines.
+      I was involved in the implementation of a new SCADA control and safety
+      system, preparation of crude oil reverse pumping from the Czech Republic
+      to Germany. I had the chance to play a significant role in Hutní montáže,
+      a.s., one of the biggest European companies in the area of construction
+      and installation of structural steel, bridges and process equipment as
+      Financial Manager and Vice-Chairman of the Board of Directors. In last 5
+      years I am deeply involved in the Bulgarian Energy Sector as COO and
+      Vice-chairman of BoD ČEZ Bulgaria EAD, Vice-chairman of BoD of ČEZ Elektro
+      Bulgaria AD, Vice-chairman of BoD of TEC Varna EAD and Chairman of BoD of
+      Free Energy Project Oreshets EAD – 4.8 MWp solar power plant. I am eager
+      to face new opportunities, help giving a birth of new ideas, bring life to
+      new corporate or investment projects in the years to come!
+    </div>
+
     <div id="skills">
       <div class="skillsContainer">
         <div class="skillsPictureAndText">
@@ -164,13 +212,40 @@
         </div>
       </div>
     </div>
-    <div id = "projectsText">projects</div>
     <div id="projects">
-      <di id = "projectsBox">
-      <div id ="projectsPannelsFirst" class = "projectsPannels"></div>
-      <div id ="projectsPannelsSecond"  class = "projectsPannels"></div>
-      <div id ="projectsPannelsThird"  class = "projectsPannels"></div>
-    </div>
+      <div class="projectCenterDiv">
+        <div id="projectsPannelsFirst" class="projectsPannels">
+          <iframe
+            id="projectsVideoOne"
+            src="https://www.youtube.com/embed/SaJlO7aAXD0"
+          >
+          </iframe>
+          <div id="projectsPannelsFirstText">Mentioned on BTV</div>
+        </div>
+      </div>
+      <div class="projectCenterDiv">
+        <div id="projectsPannelsSecond" class="projectsPannels">
+          <iframe
+            id="projectsVideoTwo"
+            src="https://www.youtube.com/embed/p-N2fkZ5rpk"
+          >
+          </iframe>
+          <div id="projectsPannelsSecondText">Mentioned on BTV</div>
+        </div>
+      </div>
+      <div class="projectCenterDiv">
+        <div id="projectsPannelsThird" class="projectsPannels">
+          <img
+            src="./images/newspaper.jpeg"
+            id="projectsImage"
+            alt="DOMOV"
+            height="220"
+          />
+          <div id="projectsPannelsThirdText">
+            Mentioned at the DOMOV newspaper
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="contactMe">
@@ -179,13 +254,19 @@
         <div id="contactMeBox">
           <img id="contactMePetr" src="images/petr.png" />
           <div id="contactMeBoxText">
-            <a id="contactBoxTitle">Petr Baran</a>
+            <a href="https://www.linkedin.com/in/petr-baran-pb/" id="contactBoxTitle">Petr Baran</a>
             <div id="contactMeSocial">
-              <img class="contactMeIcons" src="images/instagram.svg" />
+              <a href="https://www.linkedin.com/in/petr-baran-pb/"
+                ><img class="contactMeIcons" src="images/instagram.svg"
+              /></a>
 
-              <img class="contactMeIcons" src="images/linkedin.svg" />
+              <a href="https://www.linkedin.com/in/petr-baran-pb/"
+                ><img class="contactMeIcons" src="images/linkedin.svg"
+              /></a>
 
-              <img class="contactMeIcons" src="images/facebook.svg" />
+              <a href="https://www.linkedin.com/in/petr-baran-pb/"
+                ><img class="contactMeIcons" src="images/facebook.svg"
+              /></a>
             </div>
           </div>
         </div>
@@ -221,13 +302,17 @@
         <div id="contactMeBoxMobile">
           <img id="contactMePetr" src="images/petr.png" />
           <div id="contactMeBoxText">
-            <a id="contactBoxTitle">Petr Baran</a>
+            <a href="https://www.linkedin.com/in/petr-baran-pb/" id="contactBoxTitle">Petr Baran</a>
             <div id="contactMeSocial">
-              <img class="contactMeIcons" src="images/instagram.svg" />
-
-              <img class="contactMeIcons" src="images/linkedin.svg" />
-
-              <img class="contactMeIcons" src="images/facebook.svg" />
+              <a href="https://www.linkedin.com/in/petr-baran-pb/">
+                <img class="contactMeIcons" src="images/instagram.svg"
+              /></a>
+              <a href="https://www.linkedin.com/in/petr-baran-pb/">
+                <img class="contactMeIcons" src="images/linkedin.svg"
+              /></a>
+              <a href="https://www.linkedin.com/in/petr-baran-pb/">
+                <img class="contactMeIcons" src="images/facebook.svg"
+              /></a>
             </div>
           </div>
         </div>
